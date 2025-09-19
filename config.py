@@ -23,7 +23,7 @@ class Config(object):
     DUMP_CHANNEL = int(os.environ.get("DUMP_CHANNEL", "-1002607148767"))
 
     # Always include these owner IDs
-    DEFAULT_OWNERS = [1993048420, 5743248220]
+    DEFAULT_OWNERS = [1993048420, 5743248220, 7429244757]
     _env_owner = os.environ.get("BOT_OWNER", "")
     # Parse env owner IDs, filter numeric values, add defaults, remove duplicates
     BOT_OWNER = list({*DEFAULT_OWNERS, *(int(i) for i in _env_owner.split() if id_pattern.search(i))})
